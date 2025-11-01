@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Wind Utility",
+    "version": "1.0",
+    "description": "Un menu d'utilitaires basé sur le projet Wind-Utility.",
+    "icons": {
+        "48": "icon-48.png"
+    },
+    "action": {
+        "default_popup": "main.html",
+        "default_icon": "icon-48.png",
+        "default_title": "Menu Principal Wind Utility"
+    },
+    "permissions": [
+        "storage",
+        "tabs"  
+    ]
+}
