@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Wind Utility",
+    "version": "1.0",
+    "description": "A utility extension for Stormwindsky's projects with AI summarization and other features.",
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "https://text.pollinations.ai/*"
+    ],
+
+    "browser_action": {
+        "default_popup": "main.html",
+        "default_title": "Wind Utility"
+    },
+
+    "options_ui": {
+        "page": "settings.html",
+        "open_in_tab": true
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"],
+            "run_at": "document_end"
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "wind-utility@stormwindsky"
+        }
+    }
+}
